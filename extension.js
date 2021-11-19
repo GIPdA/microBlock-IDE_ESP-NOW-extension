@@ -39,5 +39,8 @@
         "esp_now_get_sender_mac",
         "esp_now_read_as_text",
         "esp_now_read_as_number"
+    ],
+    chip: [
+        "ESP32" // Chip support
     ]
 });
