@@ -3,7 +3,7 @@
     description: "Communication between KidBright32 via ESP-NOW",
     author: "microBlock",
     category: "Communication",
-    version: "1.0.0",
+    version: "1.0.1",
     icon: "/static/icon.png", // Category icon
     color: "#E74C3C", // Category color (recommend some blocks color)
     blocks: [ // Blocks in Category

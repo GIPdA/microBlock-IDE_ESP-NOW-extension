@@ -45,7 +45,7 @@ def getSenderMAC():
   return ":".join("%02X" % i for i in addr)
 
 def readAsText():
-  return str(buff) if buff else ""
+  return buff.decode("utf-8") if buff else ""
 
 def readAsNumber():
   if not buff:
