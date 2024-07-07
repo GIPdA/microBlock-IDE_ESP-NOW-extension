@@ -1,9 +1,9 @@
 ({
-    name: "ESP-NOW", // Category Name
-    description: "Communication between ESP via ESP-NOW",
-    author: "microBlock",
+    name: "ESPnow", // Category Name
+    description: "Communication between ESP32 via ESPnow",
+    author: "gipda",
     category: "Communication",
-    version: "1.0.1",
+    version: "2.0.0",
     icon: "/static/icon.png", // Category icon
     color: "#E74C3C", // Category color (recommend some blocks color)
     modules: [
