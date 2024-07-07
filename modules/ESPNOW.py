@@ -1,11 +1,11 @@
 import network
-from esp import espnow
+import espnow
 
 wlan = network.WLAN(network.STA_IF)
 wlan.active(True)
 
 now = espnow.ESPNow()
-now.init()
+now.active(True)
 
 def getMyMAC():
   return ":".join("%02X" % i for i in wlan.config('mac'))
@@ -13,7 +13,7 @@ def getMyMAC():
 def addPeer(addr):
   try:
     now.get_peer(addr)
-  except OSError:
+  except OSError: # not found, can add
     try:
       now.add_peer(addr)
     except OSError:
