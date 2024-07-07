@@ -34,9 +34,8 @@ addr = None
 buff = None
 def isReadyToRead():
   global buff, addr
-  data = now.irecv(10)
-  if data:
-    addr, buff = data
+  addr, buff = now.irecv(10)
+  if buff:
     return True
   else:
     return False
