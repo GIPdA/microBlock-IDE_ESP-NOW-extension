@@ -1,11 +1,14 @@
 ({
     name: "ESP-NOW", // Category Name
-    description: "Communication between KidBright32 via ESP-NOW",
+    description: "Communication between ESP via ESP-NOW",
     author: "microBlock",
     category: "Communication",
     version: "1.0.1",
     icon: "/static/icon.png", // Category icon
     color: "#E74C3C", // Category color (recommend some blocks color)
+    modules: [
+        "modules/ESPNOW.py",
+    ],
     blocks: [ // Blocks in Category
         "esp_now_get_my_mac",
         {
